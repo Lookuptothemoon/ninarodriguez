@@ -1,13 +1,8 @@
 /* =================================
 ------------------------------------
-  Riddle - Portfolio
-  Version: 1.0
+  Nina Rodriguez - Portfolio
  ------------------------------------ 
  ====================================*/
-
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
 
 html,
 body {
@@ -24,7 +19,7 @@ h6 {
   color: #001418;
   margin: 0;
   font-weight: 600;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: Arial;
 }
 
 p {
@@ -359,6 +354,10 @@ ol {
 
 .site-logo {
   font-size: 24px;
+  padding-top: 10px;
+}
+
+.main-menu {
   padding-top: 20px;
 }
 
@@ -372,11 +371,9 @@ ol {
 
 .main-menu ul li a {
   display: inline-block;
-  font-size: 18px;
+  font-size: 15px;
   color: #001418;
-  margin-left: 15px;
   margin-right: 10px;
-  padding: 20px 0 5px;
 }
 
 .header-btn {
@@ -389,15 +386,60 @@ ol {
 }
 
 /*------------------------
-    Intro Section
---------------------------*/
-.intro-section {
-  padding: 110px 0;
-}
-
-/*------------------------
     Portfolio Section
 --------------------------*/
+
+/*slideshow*/
+.slideshow {
+  background-color: pink;
+  height: 100%;
+}
+
+.slideshow-cont {
+  height: 100%;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgba(0, 255, 0, 0.8);
+  font-size: 50px;
+  font-weight: bold;
+  border-radius: 0 10px 10px 0;
+  text-shadow: 7px 5px 8px white;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+  text-shadow: -7px 5px 8px white;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
+
 .portfolio-section {
   overflow: hidden;
 }
@@ -538,21 +580,26 @@ ol {
     About Page
 --------------------------*/
 .pic-frame {
+  margin-top: 50px;
   position: relative;
-  padding-left: 25px;
-  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-bottom: 20px;
   display: inline-block;
 }
 
 .pic-frame:after {
   position: absolute;
   content: "";
-  width: calc(100% - 25px);
-  height: calc(100% - 25px);
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
   bottom: 0;
   left: 0;
   border: 2px solid #000;
   z-index: 1;
+}
+
+.about-text {
+  margin-top: 50px;
 }
 
 .milestone {

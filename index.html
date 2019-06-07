@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Riddle - Portfolio Template</title>
+	<title>Nina Rodriguez.</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Riddle - Portfolio Template">
-	<meta name="keywords" content="portfolio, riddle, onepage, creative, html">
+	<meta name="keywords" content="portfolio, Nina Rodriguez, onepage, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
 	<link href="img/favicon.ico" rel="shortcut icon"/>
@@ -35,19 +35,26 @@
 	<header class="header-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 col-md-3">
+				<div class="col-lg-3 col-md-3">
 					<div class="logo">
-						<h2 class="site-logo">Riddle</h2>
+						<h2 class="site-logo">N &nbsp; I &nbsp; N &nbsp; A <br>RODRIGUEZ.</h2>
 					</div>
 				</div>
 				<div class="col-lg-8 col-md-9">
-					<a href="" class="site-btn header-btn">Get in touch</a>
 					<nav class="main-menu">
 						<ul>
-							<li><a href="home.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="home-2.html">Work</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<center>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="brands.html">BRANDS</a></li>
+							<li><a href="magazines.html">MAGAZINES</a></li>
+							<li><a href="interviews.html">INTERVIEWS</a></li>
+							<li><a href="commercials.html">COMMERCIALS</a></li>
+							<li><a href="photography.html">PHOTOGRAPHY</a></li>
+							<li><a href="published.html">PUBLISHED WORK</a></li>
+							<li><a href="runway.html">RUNWAY</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+							</center>
 						</ul>
 					</nav>
 				</div>
@@ -59,17 +66,98 @@
 	</header>
 	<!-- header section end -->
 
-	<!-- intro section start -->
-	<section class="intro-section">
-		<div class="container text-center">
-			<div class="row">
-				<div class="col-xl-10 offset-xl-1">
-					<h2 class="section-title">I’m a freelance <span>digital designer</span>, with +10 years of experience</h2>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- intro section end -->
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="slideshow">
+<div class="slideshow-cont">
+  <div class="mySlides">
+    <center><img src="img/blog/1.jpg"></center>
+  </div>
+
+  <div class="mySlides">
+    <img src="img/blog/2.jpg">
+  </div>
+
+  <div class="mySlides">
+    <img src="img/blog/3.jpg">
+  </div>
+    
+  <div class="mySlides">
+    <img src="img/blog/4.jpg">
+  </div>
+
+  <div class="mySlides">
+    <img src="img/blog/5.jpg">
+  </div>
+    
+  <div class="mySlides">
+    <img src="img/blog/6.jpg">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	<!-- portfolio section start -->
