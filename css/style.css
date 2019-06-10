@@ -192,6 +192,15 @@ ol {
   color: red;
 }
 
+#submit-btn {
+  background-color: red;
+  color: white;
+}
+
+#submit-btn:hover {
+  color: black;
+}
+
 /*===  Accordion  ===*/
 .accordion-area .panel {
   margin-bottom: 30px;
@@ -603,8 +612,10 @@ ol {
 }
 
 .contact-form {
-  display: block;
-  width: 100%;
+  margin: auto;
+  border: 3px solid black;
+  padding: 20px;
+  width: 70%;
 }
 
 .contact-form input {
@@ -614,7 +625,7 @@ ol {
   border: none;
   border-bottom: 2px solid #000;
   margin-bottom: 30px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .contact-form textarea {
@@ -623,7 +634,6 @@ ol {
   width: 100%;
   border: none;
   border-bottom: 2px solid #000;
-  margin-bottom: 30px;
   font-size: 12px;
 }
 
