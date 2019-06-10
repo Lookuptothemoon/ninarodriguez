@@ -4,6 +4,10 @@
  ------------------------------------ 
  ====================================*/
 
+body {
+  background-image: url(https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiFu4yc0driAhUmh-AKHVRcDHQQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fbackground%2F&psig=AOvVaw2h_BkfVi40A-q04mxZpCgb&ust=1560109033901712);
+}
+
 html,
 body {
   height: 100%;
@@ -19,7 +23,6 @@ h6 {
   color: #001418;
   margin: 0;
   font-weight: 600;
-  font-family: Arial;
 }
 
 p {
@@ -146,10 +149,10 @@ ol {
 /*=== Buttons ===*/
 .site-btn {
   display: inline-block;
-  font-size: 14px;
+  font-size: 20px;
   min-width: 140px;
   text-align: center;
-  padding: 15px 10px;
+  padding: 10px 5px;
   position: relative;
   color: #fff;
   border: none;
@@ -185,7 +188,8 @@ ol {
 }
 
 .site-btn:hover {
-  color: #fff;
+  cursor: pointer;
+  color: red;
 }
 
 /*===  Accordion  ===*/
@@ -354,7 +358,15 @@ ol {
 
 .site-logo {
   font-size: 24px;
-  padding-top: 10px;
+  padding-top: 0px;
+}
+
+.site-logo a {
+  color: black;
+}
+
+.site-logo a:hover {
+  color: red;
 }
 
 .main-menu {
@@ -372,8 +384,12 @@ ol {
 .main-menu ul li a {
   display: inline-block;
   font-size: 15px;
-  color: #001418;
+  color: black;
   margin-right: 10px;
+}
+
+.main-menu ul li a:hover {
+  color: red;
 }
 
 .header-btn {
@@ -391,169 +407,77 @@ ol {
 
 /*slideshow*/
 .slideshow {
-  background-color: pink;
-  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .slideshow-cont {
   height: 100%;
-  position: relative;
+  background-color: #F5F5F5;
+  color: white;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mySlides img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /* Next & previous buttons */
 .prev,
 .next {
-  cursor: pointer;
   position: absolute;
+  cursor: pointer;
   top: 50%;
-  padding: 16px;
+  padding: 10px;
   margin-top: -50px;
-  color: rgba(0, 255, 0, 0.8);
-  font-size: 50px;
-  font-weight: bold;
-  border-radius: 0 10px 10px 0;
-  text-shadow: 7px 5px 8px white;
+  font-size: 40px;
+  border-radius: 0 5px 5px 0;
   user-select: none;
   -webkit-user-select: none;
+  background-color: lightgray;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 10px 0 0 10px;
-  text-shadow: -7px 5px 8px white;
+  right: 0px;
+  border-radius: 5px 0 0 5px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-
-
-
-
-
-.portfolio-section {
-  overflow: hidden;
-}
-
-.portfolio-filter {
-  list-style: none;
-  padding-bottom: 100px;
-}
-
-.portfolio-filter li {
-  font-size: 16px;
-  display: inline-block;
-  margin-right: 30px;
-  padding-bottom: 10px;
-  color: #979797;
   cursor: pointer;
+  background-color: gray;
 }
 
-.portfolio-filter li.mixitup-control-active {
-  color: #001418;
-}
-
-.portfolios-area .gallery-block {
-  padding: 0;
-}
-
-.gallery-block {
-  position: relative;
-}
-
-.portfolio-item {
-  display: block;
-  width: 100%;
-  height: 600px;
-  background-position: center center;
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.portfolio-item .pi-inner {
+#slideNo {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: transparent;
-  -webkit-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
+  cursor: pointer;
+  top: 100px;
+  right: 50px;
+  color: black;
+  text-shadow: 1px 1px white;
 }
 
-.portfolio-item .pi-inner h2 {
-  opacity: 0;
-  font-size: 30px;
-  font-weight: 400;
-  position: absolute;
-  left: 50px;
-  bottom: 50px;
-  color: #fff;
-  letter-spacing: 10px;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+#slideNo {
+  cursor: auto;
 }
 
-.portfolio-item:hover .pi-inner {
-  background: rgba(0, 20, 24, 0.8);
-}
 
-.portfolio-item:hover .pi-inner h2 {
-  opacity: 1;
-  letter-spacing: 0;
-}
-
-.portfolio-meta {
-  padding-bottom: 45px;
-}
-
-.portfolio-meta h2 {
-  font-size: 24px;
-}
-
-.portfolio-meta p {
-  font-size: 14px;
-  color: #a6a6a6;
-  margin-bottom: 0;
-}
-
-.portfolio-intro {
-  display: block;
-}
-
-.img-popup-warp .mfp-content {
-  opacity: 0;
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.img-popup-warp.mfp-ready .mfp-content {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
 
 /*------------------------
     Footer Section
 --------------------------*/
 .footer-section {
-  padding: 110px 0;
+  padding-top: 30px;
 }
 
 .footer-section .copyright {
@@ -781,7 +705,7 @@ ol {
     right: 25px;
     font-size: 30px;
     color: #333;
-    top: 35px;
+    top: 15px;
     display: block;
   }
   .header-btn {
@@ -789,9 +713,6 @@ ol {
   }
   .section-title {
     font-size: 45px;
-  }
-  .portfolio-filter {
-    text-align: center;
   }
 }
 
