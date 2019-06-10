@@ -45,9 +45,9 @@
 						<ul>
 							<center>
 							<li><a href="index.html">HOME</a></li>
-							<li><a href="about.html">ABOUT</a></li>
 							<li><a href="brands.html">BRANDS</a></li>
 							<li><a href="editorial.html">EDITORIAL</a></li>
+							<li><a href="about.html">ABOUT</a></li>
 							<li><a href="contact.html">CONTACT</a></li>
 							</center>
 						</ul>
@@ -65,16 +65,19 @@
 	<section class="slideshow">
 		<div class="slideshow-cont">
 			<!-- Slides -->
-			<div class="mySlides"> <img style="width: 100%;" src="img/blog/1.jpg"> </div>
-			<div class="mySlides"> <img src="img/blog/2.jpg"> </div>
-			<div class="mySlides"> <img src="img/blog/3.jpg"> </div>
-			<div class="mySlides"> <img src="img/blog/4.jpg"> </div>
-			<div class="mySlides"> <img src="img/blog/5.jpg"> </div>
-			<div class="mySlides"> <img src="img/blog/6.jpg"> </div>
+			<div class="mySlides"> <img src="img/personal/1.jpg"> </div>
+			<div class="mySlides"> <img src="img/personal/3.jpg"> </div>
+			<div class="mySlides"> <img src="img/personal/4.jpg"> </div>
+			<div class="mySlides"> <img src="img/personal/6.jpg"> </div>
+			<div class="mySlides"> <img src="img/personal/7.jpg"> </div>
+			<div class="mySlides"> <img src="img/personal/8.jpg"> </div>
+			<div class="mySlides"> <img src="img/personal/10.jpg"> </div>
+			<div class="mySlides"> <img src="img/personal/13.jpg"> </div>
+			<div class="mySlides"> <img src="img/personal/14.jpg"> </div>
 			<!-- Prev/Next Buttons -->
 			<a class="prev" onclick="plusSlides(-1)">❮</a>
 			<a class="next" onclick="plusSlides(1)">❯</a>
-			<h1 class="slideNo">Cool</h1>
+			<h1 id="slideNo">Cool</h1>
 		</div>
 	</section>
 
@@ -87,7 +90,6 @@
 
 		function currentSlide(n) {
 			showSlides(slideIndex = n);
-			document.getElementById("slideNo").innerHTML = n;
 		}
 
 		function showSlides(n) {
@@ -97,6 +99,9 @@
 				if (n < 1) {slideIndex = slides.length}
 					for (i = 0; i < slides.length; i++) {
 						slides[i].style.display = "none";
+						var s_num = slideIndex;
+						s_num += "/9"
+						document.getElementById("slideNo").innerHTML = s_num;
 					}
 					slides[slideIndex-1].style.display = "block";
 				}

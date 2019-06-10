@@ -419,15 +419,16 @@ ol {
 
 /* Hide the images by default */
 .mySlides {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .mySlides img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  min-height: 400px;
+  max-height: 600px;
 }
 
 /* Next & previous buttons */
@@ -461,8 +462,8 @@ ol {
 #slideNo {
   position: absolute;
   cursor: pointer;
-  top: 100px;
-  right: 50px;
+  top: 95px;
+  right: 10px;
   color: black;
   text-shadow: 1px 1px white;
 }

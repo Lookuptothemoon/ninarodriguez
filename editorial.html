@@ -45,9 +45,9 @@
 						<ul>
 							<center>
 							<li><a href="index.html">HOME</a></li>
-							<li><a href="about.html">ABOUT</a></li>
 							<li><a href="brands.html">BRANDS</a></li>
 							<li><a href="editorial.html">EDITORIAL</a></li>
+							<li><a href="about.html">ABOUT</a></li>
 							<li><a href="contact.html">CONTACT</a></li>
 							</center>
 						</ul>
@@ -65,15 +65,26 @@
 	<section class="slideshow">
 		<div class="slideshow-cont">
 			<!-- Slides -->
-			<div class="mySlides"> <img src="img/blog/1.jpg"> </div>
-			<div class="mySlides"> <img src="img/blog/2.jpg"> </div>
-			<div class="mySlides"> <img src="img/blog/3.jpg"> </div>
-			<div class="mySlides"> <img src="img/blog/4.jpg"> </div>
-			<div class="mySlides"> <img src="img/blog/5.jpg"> </div>
-			<div class="mySlides"> <img src="img/blog/6.jpg"> </div>
+			<div class="mySlides"> <img src="img/editorial/1.jpg"> </div>
+			<div class="mySlides"> <img src="img/editorial/2.jpg"> </div>
+			<div class="mySlides"> <img src="img/editorial/3.jpg"> </div>
+			<div class="mySlides"> <img src="img/editorial/4.jpg"> </div>
+			<div class="mySlides"> <img src="img/editorial/6.jpg"> </div>
+			<div class="mySlides"> <img src="img/editorial/7.png"> </div>
+			<div class="mySlides"> <img src="img/editorial/8.jpg"> </div>
+			<div class="mySlides"> <img src="img/editorial/9.png"> </div>
+			<div class="mySlides"> <img src="img/editorial/10.jpg"> </div>
+			<div class="mySlides"> <img src="img/editorial/11.jpg"> </div>
+			<div class="mySlides"> <img src="img/editorial/12.jpg"> </div>
+			<div class="mySlides"> <img src="img/editorial/13.jpg"> </div>
+			<div class="mySlides"> <img src="img/editorial/14.jpg"> </div>
+			<div class="mySlides"> <img src="img/editorial/15.jpg"> </div>
+			<div class="mySlides"> <img src="img/editorial/17.jpg"> </div>
+			<div class="mySlides"> <img src="img/editorial/18.jpg"> </div>
 			<!-- Prev/Next Buttons -->
 			<a class="prev" onclick="plusSlides(-1)">❮</a>
 			<a class="next" onclick="plusSlides(1)">❯</a>
+			<h1 id="slideNo">Cool</h1>
 		</div>
 	</section>
 
@@ -95,6 +106,9 @@
 				if (n < 1) {slideIndex = slides.length}
 					for (i = 0; i < slides.length; i++) {
 						slides[i].style.display = "none";
+						var s_num = slideIndex;
+						s_num += "/16"
+						document.getElementById("slideNo").innerHTML = s_num;
 					}
 					slides[slideIndex-1].style.display = "block";
 				}
