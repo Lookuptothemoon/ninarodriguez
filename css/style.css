@@ -189,11 +189,11 @@ ol {
 
 .site-btn:hover {
   cursor: pointer;
-  color: red;
+  color: mediumpurple;
 }
 
 #submit-btn {
-  background-color: red;
+  background-color: mediumpurple;
   color: white;
 }
 
@@ -375,7 +375,7 @@ ol {
 }
 
 .site-logo a:hover {
-  color: red;
+  color: mediumpurple;
 }
 
 .main-menu {
@@ -398,7 +398,7 @@ ol {
 }
 
 .main-menu ul li a:hover {
-  color: red;
+  color: mediumpurple;
 }
 
 .header-btn {
@@ -542,7 +542,7 @@ ol {
 }
 
 .milestone h2 {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .milestone h2 span {
