@@ -80,23 +80,20 @@
 					<h2>So, let’s talk</h2>
 				</div>
 			</div>
-			<form class="contact-form" action="mailto:Flrodriguez2986@gmail.com" method="post">
+			<form class="contact-form" action="mailto:Flrodriguez2986@gmail.com" method="post" enctype="text/plain">
 				<div class="row">
 					<div class="col-md-12">
-						<input type="text" placeholder="Name">
+						<input name="name" type="text" placeholder="Name *" required> <br>
 					</div>
 					<div class="col-md-12">
-						<input type="text" placeholder="E-mail">
+						<input name="email" type="text" placeholder="E-mail *" required> <br>
 					</div>
 					<div class="col-md-12">
-						<input type="text" placeholder="Subject">
-					</div>
-					<div class="col-md-12">
-						<textarea placeholder="Message"></textarea>
+						<textarea name="message" placeholder="Message"></textarea>
 					</div>
 				</div>
 				<div class="text-center">
-					<button class="site-btn" id="submit-btn">Send</button>
+					<input type="submit" value="submit" class="site-btn" id="submit-btn"></input>
 				</div>
 			</form>
 		</div>
