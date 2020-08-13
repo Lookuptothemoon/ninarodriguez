@@ -4,11 +4,7 @@
 	Version: 1.0
  ------------------------------------ 
  ====================================*/
-
-
-
 'use strict';
-
 
 $(window).on('load', function() { 
 	/*------------------
@@ -21,11 +17,13 @@ $(window).on('load', function() {
 		var containerEl = document.querySelector('.portfolios-area');
 		var mixer = mixitup(containerEl);
 	}
-
 });
 
-
-(function($) {
+$(document).ready(function(){
+	$('.mySlides').each(function() {
+		$('.mySlides').lazy();
+		console.log("loaded img");
+	});
 
 	/*------------------
 		Navigation
@@ -35,8 +33,6 @@ $(window).on('load', function() {
 		event.preventDefault();
 	});
 
-
-
 	/*------------------
 		Background set
 	--------------------*/
@@ -44,8 +40,6 @@ $(window).on('load', function() {
 		var bg = $(this).data('setbg');
 		$(this).css('background-image', 'url(' + bg + ')');
 	});
-
-
 
 	/*----------------------
 		Portfolio layout
@@ -64,8 +58,6 @@ $(window).on('load', function() {
 		$(this).height(pi_width + 50);
 	});
 
-
-
 	/*------------------
 		Popup
 	--------------------*/
@@ -74,7 +66,6 @@ $(window).on('load', function() {
 		mainClass: 'img-popup-warp',
 		removalDelay: 400,
 	});
-
 
 	/*------------------
 		Accordions
@@ -90,7 +81,6 @@ $(window).on('load', function() {
 
 
 if($().circleProgress){
-
 	//Set progress circle 1
 	$("#progress1").circleProgress({
 		value: 0.75,
@@ -125,4 +115,4 @@ if($().circleProgress){
 	});
 }
 
-})(jQuery);
+});
