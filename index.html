@@ -86,6 +86,8 @@
 			slideNo.text(i + '/' + slick.slideCount);
 		});
 
+		slides.slick();
+		slides.slick('unslick');
 		slides.slick({
 			lazyLoad: 'ondemand',
 			slidesToShow: 1,

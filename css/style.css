@@ -28,6 +28,7 @@
 
 body {
   background-color: white;
+  min-width: 320px;
 }
 
 a {
@@ -341,6 +342,9 @@ footer {
     display: none;
     margin: 10px 0;
   }
+  .slick-arrow {
+    display: none !important;
+  }
 }
 @media all and (min-width: 965px) {
   /* desktop navbar */
@@ -352,6 +356,9 @@ footer {
   }
   .navbar-menu-item {
     margin: 10px 20px;
+  }
+  .slick-arrow {
+    display: inline-block;
   }
 }
 
@@ -381,12 +388,5 @@ footer {
 @media all and (max-width: 700px) {
   .about-intro p {
     font-size: 30px;
-  }
-}
-
-
-@media all and (max-width: 750px) {
-  .slick-arrow {
-    display: none;
   }
 }
