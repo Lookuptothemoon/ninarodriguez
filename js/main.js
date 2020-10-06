@@ -5,9 +5,6 @@ $(window).on('load', function() {
 
 /* ON DOCUMENT READY */
 $(document).ready( function() {
-	let i = 0;
-	
-
 	/* show/hide mobile menu */
 	$(".navbar-top-mobile-toggle").click( function() {
 		$(".navbar-menu-item").toggle();
