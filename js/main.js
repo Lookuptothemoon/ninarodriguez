@@ -2,11 +2,6 @@
 let reload = true;
 $(window).on('load', function() {
 	$('.preloader-wrapper').fadeOut(500);
-
-	if(!window.location.hash) {
-        window.location = window.location + '#loaded';
-        window.location.reload();
-    }
 });
 
 /* ON DOCUMENT READY */

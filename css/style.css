@@ -157,6 +157,9 @@ nav {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+.slick-list {
+  width: 100% !important;
+}
 
 
 /* ABOUT */
